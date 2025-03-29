@@ -3,16 +3,19 @@ import "./Footer.css";
 import { assets } from "../../assets/assets";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
           <img src={assets.footer_logo} alt="" style={{ width: "173px" }} />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum in,
-            beatae dolorem non optio cupiditate, quam sunt dicta dolores minima
-            exercitationem ducimus totam aut asperiores inventore harum
-            laudantium. Distinctio, libero.
+            "Foodie brings your favorite meals right to your doorstep with
+            speed, freshness, and flavor. Whether you're craving local delights
+            or gourmet cuisine, we connect you with the best restaurants in
+            town. With an easy-to-use platform and seamless ordering experience,
+            Foodie makes every meal convenient and satisfying. Order now and let
+            your cravings guide you!"
           </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -32,14 +35,14 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+94 765489545</li>
-            <li>dulanjalisenarathna93@gmail.com</li>
+            <li>+911234576890</li>
+            <li>viditsahu@gmail.com</li>
           </ul>
         </div>
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 &copy; Dulanjali - All Right Reserved.
+        Copyright {currentYear} &copy; Vidit Sahu - All Right Reserved.
       </p>
     </div>
   );
